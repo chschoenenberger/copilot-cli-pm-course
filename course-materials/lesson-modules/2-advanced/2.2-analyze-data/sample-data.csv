@@ -1,0 +1,51 @@
+user_id,signup_date,plan_type,nps_score,tasks_created,projects_created,integrations_used,satisfaction_tasks,satisfaction_projects,satisfaction_integrations,satisfaction_overall,feedback_comment
+U001,2024-10-15,Pro,9,45,5,3,5,4,4,5,Love the simplicity. Much easier than Asana.
+U002,2024-09-22,Free,6,12,1,0,3,3,2,3,Would upgrade but need SSO for my team.
+U003,2024-11-01,Enterprise,8,120,15,5,4,5,4,4,GitHub integration could be better but overall solid.
+U004,2024-08-10,Pro,7,78,8,2,4,4,3,4,Mobile app would be nice.
+U005,2024-12-01,Free,4,5,0,0,2,2,1,2,Got confused during setup. Gave up.
+U006,2024-10-30,Pro,10,95,12,4,5,5,5,5,Best PM tool I've used. Keyboard shortcuts are amazing.
+U007,2024-07-15,Enterprise,9,200,25,6,5,5,4,5,Our team loves it. Need better reporting though.
+U008,2024-11-15,Free,5,8,1,0,3,2,2,3,Notifications are annoying. Too many emails.
+U009,2024-09-05,Pro,8,55,6,3,4,4,4,4,Good tool. Would like templates.
+U010,2024-10-01,Enterprise,7,150,20,4,4,4,3,4,Audit logs are helpful but hard to export.
+U011,2024-12-05,Free,3,2,0,0,2,1,1,2,Too slow. Page takes forever to load.
+U012,2024-08-20,Pro,9,88,10,3,5,4,4,5,Switched from Monday.com. So much cleaner.
+U013,2024-11-10,Pro,6,30,3,1,3,3,3,3,Fine but nothing special. Missing Slack integration.
+U014,2024-09-15,Enterprise,10,180,22,5,5,5,5,5,Exactly what our remote team needed.
+U015,2024-10-20,Free,7,15,2,0,4,3,2,3,Good for small projects. Might upgrade later.
+U016,2024-07-01,Pro,8,65,7,2,4,4,4,4,Search could be faster but otherwise great.
+U017,2024-11-25,Free,4,3,0,0,2,2,1,2,Confusing terminology. Whats a workspace vs project?
+U018,2024-08-15,Enterprise,8,165,18,5,4,4,4,4,Need SAML SSO for compliance. When is it coming?
+U019,2024-10-10,Pro,9,72,9,3,5,4,4,5,Love the speed. Linear-like but better for PMs.
+U020,2024-12-10,Free,5,6,1,0,3,2,2,2,Trial ended before I could evaluate properly.
+U021,2024-09-01,Pro,7,48,5,2,4,3,3,4,Calendar view would be helpful.
+U022,2024-11-05,Enterprise,9,210,28,6,5,5,5,5,Best purchase decision this year. Team productivity up 30%.
+U023,2024-10-25,Free,6,10,1,0,3,3,2,3,Like it but free plan too limited.
+U024,2024-08-25,Pro,8,82,11,4,4,4,4,4,Dark mode is perfect for late night work.
+U025,2024-07-20,Enterprise,7,140,16,4,4,4,3,4,Onboarding new team members is harder than expected.
+U026,2024-11-20,Free,2,1,0,0,1,1,1,1,Signed up by accident. Never used it.
+U027,2024-09-10,Pro,9,60,7,3,5,4,4,5,Finally a tool that doesnt feel bloated.
+U028,2024-10-05,Enterprise,8,175,21,5,4,5,4,4,API documentation could be clearer.
+U029,2024-12-15,Free,5,7,1,0,3,2,2,3,Trying it out. Need more templates.
+U030,2024-08-01,Pro,10,100,13,4,5,5,5,5,Game changer for our agency.
+U031,2024-11-08,Pro,6,35,4,1,3,3,3,3,Good but Asana has more features.
+U032,2024-09-20,Enterprise,9,190,24,6,5,5,4,5,ROI was clear within first month.
+U033,2024-10-15,Free,4,4,0,0,2,2,1,2,Import from Trello didnt work.
+U034,2024-07-25,Pro,8,70,8,3,4,4,4,4,Great for daily standups.
+U035,2024-11-30,Free,6,11,2,0,3,3,2,3,Good starter tool. Growing out of it.
+U036,2024-08-30,Enterprise,8,155,19,5,4,4,4,4,Would like bulk actions for tasks.
+U037,2024-10-22,Pro,9,85,10,3,5,4,4,5,Perfect for our 20-person startup.
+U038,2024-09-25,Free,3,3,0,0,2,1,1,2,Too basic. Went with ClickUp instead.
+U039,2024-12-20,Pro,7,42,5,2,4,3,3,4,Still learning but promising.
+U040,2024-07-10,Enterprise,10,220,30,6,5,5,5,5,Enterprise features are excellent. SSO works great.
+U041,2024-11-12,Free,5,9,1,0,3,2,2,3,Waitinf for mobile app before committing.
+U042,2024-10-08,Pro,8,58,6,2,4,4,4,4,Clean UI. Easy to train my team.
+U043,2024-08-05,Enterprise,7,130,15,4,4,4,3,4,Permissions system is confusing.
+U044,2024-09-30,Free,6,13,2,0,3,3,2,3,Nice for personal projects.
+U045,2024-11-18,Pro,9,75,9,3,5,4,4,5,Love the markdown support.
+U046,2024-10-28,Enterprise,8,185,23,5,4,5,4,4,Would like Salesforce integration.
+U047,2024-12-08,Free,4,5,0,0,2,2,1,2,Got lost in onboarding. Gave up.
+U048,2024-07-30,Pro,8,62,7,3,4,4,4,4,Worth every penny.
+U049,2024-11-22,Free,7,16,2,0,4,3,2,3,Good free tier. Considering upgrade.
+U050,2024-09-08,Enterprise,9,195,25,6,5,5,5,5,Best PM tool for distributed teams.
