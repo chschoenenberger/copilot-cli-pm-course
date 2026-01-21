@@ -10,72 +10,80 @@ This module walks you through installing Copilot CLI on your system.
 
 Before installing Copilot CLI, ensure you have:
 
-1. **GitHub Account** with Copilot subscription
-2. **Node.js 18+** installed
-3. **Git** installed
+1. **GitHub Account** with an active Copilot subscription
+2. **PowerShell v6+** (Windows) or Terminal (macOS/Linux)
+3. **Git** installed (for cloning the course)
 
 ### Check Your Prerequisites
 
 ```bash
-# Check Node.js version (should be 18+)
-node --version
-
 # Check Git
 git --version
+
+# Check PowerShell version (Windows only, should be 6+)
+$PSVersionTable.PSVersion
 ```
 
 ---
 
 ## Installation Methods
 
-### Method 1: npm (Recommended)
+### Windows (WinGet) - Recommended
 
 ```bash
-# Install globally
-npm install -g @githubnext/github-copilot-cli
+# Install via WinGet
+winget install GitHub.Copilot
 
 # Verify installation
 copilot --version
 ```
 
-### Method 2: Homebrew (macOS)
+### macOS / Linux (Homebrew)
 
 ```bash
 # Install via Homebrew
-brew install gh-copilot
+brew install copilot-cli
 
 # Verify installation
 copilot --version
 ```
 
-### Method 3: Manual Download
+### All Platforms (npm)
 
-Visit [GitHub Copilot CLI releases](https://github.com/githubnext/github-copilot-cli/releases) and download for your platform.
+```bash
+# Install via npm
+npm install -g @github/copilot
+
+# Verify installation
+copilot --version
+```
+
+### macOS / Linux (Install Script)
+
+```bash
+# Install via script
+curl -fsSL https://gh.io/copilot-install | bash
+
+# Verify installation
+copilot --version
+```
 
 ---
 
 ## Authentication
 
-After installation, authenticate with your GitHub account:
+After installation, launch Copilot CLI and authenticate:
 
 ```bash
-# Start authentication
-copilot auth login
+# Start Copilot CLI
+copilot
 
-# Follow the prompts to:
-# 1. Open browser
-# 2. Enter the code shown
-# 3. Authorize the application
+# On first launch, you'll be prompted to log in
+# Use the /login slash command and follow the on-screen instructions
+/login
 ```
 
-### Verify Authentication
-
-```bash
-# Check auth status
-copilot auth status
-```
-
-You should see confirmation that you're logged in.
+This will open a browser window where you can authenticate with your GitHub account.
 
 ---
 
@@ -87,8 +95,8 @@ Let's make sure everything works:
 # Start Copilot CLI
 copilot
 
-# You should see a welcome message and prompt
-# Try a simple command:
+# You should see a welcome banner and prompt
+# Try a simple question:
 > What is 2 + 2?
 
 # Exit with 'exit' or Ctrl+C
@@ -100,51 +108,38 @@ copilot
 
 ### "copilot: command not found"
 
-**Solution:** Ensure npm global bin is in your PATH:
+**Windows:** Make sure WinGet installed correctly, or try the npm method.
 
+**macOS/Linux:** Ensure Homebrew bin is in your PATH:
 ```bash
-# Find npm global bin location
-npm config get prefix
-
-# Add to PATH (add to your shell profile)
-export PATH="$PATH:$(npm config get prefix)/bin"
+export PATH="/opt/homebrew/bin:$PATH"
 ```
 
 ### Authentication Errors
 
-**Solution:** Clear and re-authenticate:
-
+Try logging in again:
 ```bash
-copilot auth logout
-copilot auth login
+copilot
+/login
 ```
 
-### Permission Denied
+### Permission Denied (npm install)
 
-**Solution:** You may need sudo on some systems:
-
+You may need to fix npm permissions or use sudo:
 ```bash
-sudo npm install -g @githubnext/github-copilot-cli
+sudo npm install -g @github/copilot
 ```
 
 ---
 
-## Recommended Configuration
+## Recommended Setup
 
 ### Editor Integration
 
-For the best experience, use VS Code with:
-- GitHub Copilot extension
-- Terminal integration
-
-### Shell Aliases (Optional)
-
-Add to your shell profile for convenience:
-
-```bash
-# Add to ~/.bashrc, ~/.zshrc, or PowerShell profile
-alias cop="copilot"
-```
+For the best experience, use VS Code alongside Copilot CLI:
+- Open your project folder in VS Code
+- Run Copilot CLI in VS Code's integrated terminal
+- See file changes in real-time
 
 ---
 
@@ -160,7 +155,6 @@ Once installed and authenticated, proceed to **Module 0.2: Start & Clone** to ge
 |---------|-------------|
 | `copilot` | Start Copilot CLI |
 | `copilot --version` | Check version |
-| `copilot auth login` | Authenticate |
-| `copilot auth status` | Check auth status |
-| `copilot auth logout` | Log out |
+| `/login` | Authenticate (inside Copilot CLI) |
+| `/model` | Change AI model |
 | `exit` | Exit Copilot CLI |

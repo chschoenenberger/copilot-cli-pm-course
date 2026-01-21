@@ -9,26 +9,23 @@ A quick reference guide for using GitHub Copilot CLI as a Product Manager.
 ### Installation
 
 ```bash
-# via npm
-npm install -g @githubnext/github-copilot-cli
+# Windows (WinGet)
+winget install GitHub.Copilot
 
-# via Homebrew (macOS)
-brew install gh-copilot
+# macOS/Linux (Homebrew)
+brew install copilot-cli
+
+# All platforms (npm)
+npm install -g @github/copilot
 ```
 
 ### Authentication
 
 ```bash
-copilot auth login     # Authenticate with GitHub
-copilot auth status    # Check auth status
-copilot auth logout    # Log out
-```
-
-### Basic Usage
-
-```bash
-copilot                # Start Copilot CLI
-exit                   # Exit Copilot CLI
+copilot              # Start Copilot CLI
+/login               # Authenticate with GitHub (first time)
+/model               # Change AI model
+exit                 # Exit Copilot CLI
 ```
 
 ---

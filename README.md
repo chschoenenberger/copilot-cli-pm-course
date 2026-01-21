@@ -70,24 +70,32 @@ Each module has a `REFERENCE_GUIDE.md` that can be read standalone for quick ref
 
 ## Prerequisites
 
-- GitHub Copilot subscription (Individual, Business, or Enterprise)
-- Node.js 18+ installed
+- **GitHub Copilot subscription** (Individual, Business, or Enterprise)
+- **PowerShell v6+** (Windows) or Terminal (macOS/Linux)
 - Basic familiarity with product management
 - Willingness to learn command-line basics
 
 ## Quick Start
 
 ```bash
-# Install GitHub Copilot CLI (if not already installed)
-npm install -g @anthropic/copilot
+# Install GitHub Copilot CLI
 
-# Or via Homebrew on macOS
-brew install gh-copilot
+# Windows (via WinGet)
+winget install GitHub.Copilot
 
-# Authenticate
-copilot auth login
+# macOS/Linux (via Homebrew)
+brew install copilot-cli
 
-# Clone and start
+# Or via npm (all platforms)
+npm install -g @github/copilot
+```
+
+```bash
+# Launch and authenticate
+copilot
+# On first launch, use /login to authenticate with GitHub
+
+# Clone and start the course
 git clone https://github.com/chschoenenberger/copilot-cli-pm-course.git
 cd copilot-cli-pm-course/course-materials
 copilot
